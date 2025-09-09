@@ -1,3 +1,8 @@
+-- docker exec -it video_rental_db sh -lc "mysql -uroot -proot < /docker-entrypoint-initdb.d/01-init.sql"
+
+CREATE DATABASE IF NOT EXISTS video_rental;
+USE video_rental;
+
 DROP TABLE IF EXISTS rentals;
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS users;

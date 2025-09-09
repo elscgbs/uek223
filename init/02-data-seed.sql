@@ -1,3 +1,5 @@
+-- docker exec -it video_rental_db sh -lc "mysql -uroot -proot < /docker-entrypoint-initdb.d/02-data-seed.sql"
+
 -- Users (explizite IDs für stabile Foreign Keys)
 INSERT INTO users (id, username, role) VALUES
 (1, 'alice', 'CUSTOMER'),
